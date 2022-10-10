@@ -2,7 +2,7 @@ package IDM;
 
 import java.util.Scanner;
 
-public class Identity {
+public abstract class Identity {
 
     public String userID;
     public String OrgEmail;
@@ -13,14 +13,35 @@ public class Identity {
     public String FName,LName;
     int count=001;
 
+    TAMKSTUDENT tamk;
+    TAU tau;
+
     public Identity(){
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter your first name.");
         FName = in.nextLine();
         System.out.println("Please enter your last name.");
         LName = in.nextLine();
+    }
+
+    public void tamkSetDisplayName(){
+        String name = FName+" "+LName;
+        DisplayName = tamk.setDisplayName(name);
+    }
+
+    public void tauSetDisplayName(){
+        String name = FName+" "+LName;
+        DisplayName = tau.setDisplayName(name);
+    }
+
+    public void tamkSetServices(){
         
+        tamk.setServices();
+    }
+
+    public void tauSetServices(){
         
+        tau.setServices();
     }
 
     public String getUserID(){
