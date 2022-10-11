@@ -13,7 +13,8 @@ public abstract class Identity {
     public String FName,LName;
     int count=001;
 
-    TAMKSTUDENT tamk;
+    TAMKSTUDENT tamkstudent;
+    TAMKSTAFF tamkstaff;
     TAU tau;
 
     public Identity(){
@@ -24,25 +25,40 @@ public abstract class Identity {
         LName = in.nextLine();
     }
 
-    public void tamkSetDisplayName(){
+    public String tamkSetDisplayName(){
         String name = FName+" "+LName;
-        DisplayName = tamk.setDisplayName(name);
+        DisplayName = tamkstaff.setDisplayName(name);
+        return DisplayName;
     }
 
-    public void tauSetDisplayName(){
+    public String tauSetDisplayName(){
         String name = FName+" "+LName;
+        System.out.println(name);
         DisplayName = tau.setDisplayName(name);
+        System.out.println(DisplayName);
+        return DisplayName;
     }
 
-    public void tamkSetServices(){
-        
-        tamk.setServices();
+    public String tamkStudentServices(){
+        String FullService;
+        FullService = getServices() + tamkstudent.setServices();
+        return FullService;
     }
 
-    public void tauSetServices(){
-        
-        tau.setServices();
+    public String tamkStaffServices(){
+        String FullService;
+        FullService = getServices() + tamkstaff.setServices();
+        return FullService;
     }
+
+    public String tauSetServices(){
+        String FullService;
+        FullService = Services + tau.setServices();
+        return FullService;
+    }
+
+
+
 
     public String getUserID(){
         return userID;
@@ -67,6 +83,14 @@ public abstract class Identity {
     public String getStatus() {
         return Status;
     }
+
+    public void setServices() {
+    }
+
+    public void setDisplayName() {
+    }
+
+
 
     // @Override
     // public void setUserID() {

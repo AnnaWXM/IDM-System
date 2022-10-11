@@ -8,11 +8,19 @@ public class App
 {
     public static void main( String[] args )
     {
-        Identity A = new Student();
-        Identity B = new Staff();
-        Identity C = new Visitor();
+        Identity A = new TauStudent();
+        A.setServices();
+        System.out.println(A.tauSetDisplayName() + " is a student from tau, can use " + A.tauSetServices());
 
-        System.out.println(A.getDisplayName()+" can use "+ A.tauSetServices());
+        Identity B = new TamkStaffClass();
+        B.setServices();
+        System.out.println(B.tamkSetDisplayName() +" is a staff from tamk, can use " + B.tamkStaffServices());
+
+        Identity C = new Visitor();
+        C.setServices();
+        C.setDisplayName();
+        
+        System.out.println(C.getDisplayName()+" can use "+C.getServices());
         
 
 

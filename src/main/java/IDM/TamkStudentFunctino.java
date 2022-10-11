@@ -1,21 +1,27 @@
 package IDM;
 
-public class TauClass implements TAU{
+public class TamkStudentFunctino implements TAMKSTUDENT{
+
 
     private String DisplayName;
     private String TAMKservices;
 
 
-    public String setDisplayName(String DisplayName) {
-        this.DisplayName = DisplayName+"(TAU)";
+    public String setDisplayName(String name) {
+        DisplayName = name+"(TAMK)";
         return DisplayName;
     }
 
 
     public String setServices() {
-        TAMKservices = "SISU";
+        TAMKservices = "PAKKI";
         return TAMKservices;
         
     }
 
+
+
+    
 }
+
+
