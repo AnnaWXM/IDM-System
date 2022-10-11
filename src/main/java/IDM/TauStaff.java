@@ -11,10 +11,11 @@ public class TauStaff extends Identity{
     }
     
     public void setServices() {
+        Services = "HR, O365, INTRA";   
+    }
 
-        Services = "HR, O365, INTRA";
-        
-   
+    public void setOrgEmail() {
+        OrgEmail = FName +"."+LName+"@tuni.fi";   
     }
 
 }

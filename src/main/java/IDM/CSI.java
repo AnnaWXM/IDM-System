@@ -1,5 +1,5 @@
 package IDM;
 
 public interface CSI {
-    public String[] list(); 
+    public void list(); 
 }

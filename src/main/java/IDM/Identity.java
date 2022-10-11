@@ -2,7 +2,7 @@ package IDM;
 
 import java.util.Scanner;
 
-public abstract class Identity {
+public abstract class Identity implements IDMInterface{
 
     public String userID;
     public String OrgEmail;
@@ -56,10 +56,7 @@ public abstract class Identity {
         FullService = Services + tau.setServices();
         return FullService;
     }
-
-
-
-
+    
     public String getUserID(){
         return userID;
     }
@@ -90,38 +87,13 @@ public abstract class Identity {
     public void setDisplayName() {
     }
 
+    public void setOrgEmail() {
+    }
 
+    public void setUserID() {
+    }
 
-    // @Override
-    // public void setUserID() {
-    //     // TODO Auto-generated method stub
-        
-    // }
-
-    // @Override
-    // public void setOrgEmail() {
-    //     // TODO Auto-generated method stub
-        
-    // }
-
-    // @Override
-    // public void setDisplayName() {
-    //     // TODO Auto-generated method stub
-        
-    // }
-
-    // @Override
-    // public void setServices() {
-    //     // TODO Auto-generated method stub
-        
-    // }
-
-    // @Override
-    // public void setStatus() {
-    //     // TODO Auto-generated method stub
-        
-    // }
-
-
+    public void setStatus() {
+    }
 
 }

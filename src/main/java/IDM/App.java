@@ -10,17 +10,22 @@ public class App
     {
         Identity A = new TauStudent();
         A.setServices();
+        A.setOrgEmail();
         System.out.println(A.tauSetDisplayName() + " is a student from tau, can use " + A.tauSetServices());
 
         Identity B = new TamkStaffClass();
         B.setServices();
+        B.setOrgEmail();
         System.out.println(B.tamkSetDisplayName() +" is a staff from tamk, can use " + B.tamkStaffServices());
 
         Identity C = new Visitor();
         C.setServices();
         C.setDisplayName();
-        
+        C.setOrgEmail();
         System.out.println(C.getDisplayName()+" can use "+C.getServices());
+
+        CSI csi = new ContactService();
+        csi.list();
         
 
 

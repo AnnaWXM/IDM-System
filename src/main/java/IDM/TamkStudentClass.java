@@ -1,7 +1,5 @@
 package IDM;
 
-import java.util.Scanner;
-
 public class TamkStudentClass extends Identity{
 
     public TamkStudentClass() {
@@ -11,8 +9,6 @@ public class TamkStudentClass extends Identity{
         tamkstudent = new TamkStudentFunctino();
     }
         
-
-
     public void setUserID() {
         userID = "ID"+ count;
         count++;
@@ -21,42 +17,15 @@ public class TamkStudentClass extends Identity{
       
     public void setOrgEmail() {
         OrgEmail = FName +"."+LName+"@tuni.fi";
-        
     }
 
       
     public void setStatus() {
         Status="ACTIVE";
-        
     }
 
-
-      
-    // public void setDisplayName() {
-    //     DisplayName = FName+" "+LName; 
-
-    //     // if(Institution ==1){                  //TAMK
-    //     //     DisplayName = FName+" "+LName+"(TAMK)";
-    //     //     System.out.println(DisplayName);
-        
-    //     // }else {                 //TAU
-    //     //     DisplayName = FName+" "+LName+"(TAU)";
-    //     //     System.out.println(DisplayName);
-    //     // }
-    //     // System.out.println(DisplayName);
-        
-    // }
-
-
-      
     public void setServices() {
         Services = "O365,INTRA";
-
-        // if(Institution==1){                             //Tamk student
-        //     Services = "O365,INTRA,PAKKI";
-        // }else {                                                //Tau student
-        //     Services = "O365,INTRA,SISU";
-        // }
     }
     
 }
