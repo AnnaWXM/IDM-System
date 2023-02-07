@@ -23,3 +23,14 @@ Software Patterns: strategy pattern and adapter pattern
 
 October 2022
 
+
+## More projects you may be interested
+
+Duck Behavior System with Strategy Pattern: https://github.com/AnnaWXM/StrategyPattern
+
+Duck + Turkey Example with Adapter Pattern: https://github.com/AnnaWXM/AdapterPattern
+
+Home Theater System with Facade Pattern: https://github.com/AnnaWXM/FacadePatternExample
+
+Hotel Booking System by C++: https://github.com/AnnaWXM/HotelBookingSystem
+
