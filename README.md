@@ -10,11 +10,11 @@ This project simply simulates the IDM system of Tampere Universities, spilled us
 
 ## Technology
 
-UML
-
 Java
 
 Maven
+
+UML: by diagrams.net from Google Drive
 
 Software Patterns: strategy pattern and adapter pattern
 
